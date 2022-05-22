@@ -56,7 +56,7 @@ var resolvers = {
         }); }
     },
     User: {
-        id: function (user) { return user._id; }
+        id: (user) => { return user._id; }
     }
 };
 exports.default = resolvers;

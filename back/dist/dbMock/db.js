@@ -11,7 +11,7 @@ function find(name) {
     if (name && !checkName.test(name))
         return [];
     if (name)
-        return users_1.default.filter(function (user) {
+        return users_1.default.filter( (user) => {
             return (user.name && user.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()));
         });
 }
